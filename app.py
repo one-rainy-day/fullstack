@@ -5,6 +5,8 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import false
 app = Flask(__name__)
 author = "Sang ah Park 70309"
+fruits = ["apple", "banana", "cherry", "peach", "melon", "mango"]
+cars = ["Tesla", "Toyota", "Volvo", "Jeep", "Ford", "Audi"]
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 db = SQLAlchemy(app)
@@ -64,9 +66,13 @@ def update(id):
 def about():
     return render_template('/about.html', author=author)
 
-@app.route('/help')
+@app.route('/calculator')
 def help():
-    return render_template('/help.html', author=author)
+    return render_template('/calculator.html', author=author)
+
+@app.route("/forloop")
+def valuefunction():
+    return render_template("forloop.html", fruits = fruits, cars = cars)
 
 if __name__ == "__main__":
     app.run(debug=True)
