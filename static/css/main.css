@@ -62,10 +62,6 @@ p {
     color: #ffffff;
 }
 
-.text-muted:hover {
-    color: rgb(188, 85, 197)!important;
-}
-
 hr {
     background-color: #bde0fe;
 }
@@ -103,7 +99,7 @@ hr {
 }
 
 #mybutton {
-    width: 45%;
+    width: 90px;
     margin: 1px 2.5px 1px 2.5px;
     background-color: #aab8f8;
     color: #111858;
@@ -127,3 +123,78 @@ hr {
     background-color: #98cdff;
 }
 
+.background {
+    display: block;
+    margin: 10px auto 5px auto;
+    padding: 5px 0 10px 10px;
+    border-radius: 10px;
+    width: 340px;
+    background-color: #d6dae8;
+}
+
+.forloop {
+    width: 50%;
+}
+
+.forloop p {
+    font: 600 20px Montserrat, sans-serif;
+    color: #1d3557;
+    text-align: center;
+    border: 2px solid #2fb0d0;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+#display {
+    width: 220px;
+    height: 50px;
+    text-align: right;
+    background-color: #ffffff;
+    color: #7886a7;
+    box-shadow: none;
+    padding-right: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.background h1 {
+    color: #111858;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.cal {
+    width: 65px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #8e9aaf;
+    color: #ffffff;
+    border-radius: 10px;
+    border-style: none;
+    margin: 5px;
+    box-shadow: 3px 3px 3px #3e5474;
+    transition-duration: 0.3s;
+}
+
+.cal:active {
+    box-shadow: none;
+}
+
+.calbutton {
+    background-color: #457b9d;
+}
+
+#cancelbutton {
+    background-color: #e63946;
+}
+
+#evalbutton {
+    background-color: #1d3557;
+}
+
+.frame {
+    border-radius: 10px;
+    width: 400px;
+    
+}
