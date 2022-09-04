@@ -1,0 +1,24 @@
+{% extends "base.html" %} 
+
+{% block title %}For Loop{% endblock %}
+
+{% block content %}
+
+<h1>For Loop<h1><hr />
+    <div class="background forloop">
+        <h1>Pass value to Html<h1>
+        <h4>Using For loop</h4>
+
+        <h3>{{f1}}</h3><h3>{{f2}}</h3><h3>{{f3}}</h3>
+        {% for fruit in fruits: %}
+        <p>
+            show: {% print(fruit) %}
+        </p>
+        {% endfor %}
+        {% for car in cars: %}
+        <p>
+            show: {% print(car) %}
+        </p>
+        {% endfor %}
+    </div>
+{% endblock %}
